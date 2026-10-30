@@ -1,5 +1,7 @@
 # Code Search
 
+> **Find the right Python function by describing it in plain English.**
+
 Project 1 for **Selected Topics in Software Engineering** — Addis Ababa University, Department of Software Engineering.
 
 ## Overview
