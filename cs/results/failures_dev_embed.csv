@@ -1,0 +1,429 @@
+query,gold,top1,r1,r5,rr
+Internal function that builds a new MaskedArray from the,core.py:_mareconstruct:6581,core.py:isMaskedArray:6732,0.0,0.0,0.0
+Take values from the input array by matching 1d index and data slices.,_shape_base_impl.py:take_along_axis:58,core.py:array:6905,0.0,0.0,0.0
+Split an array into multiple sub-arrays as views into `ary`.,_shape_base_impl.py:split:804,_shape_base_impl.py:array_split:743,0.0,1.0,0.5
+Evaluate a polynomial at specific values.,_polynomial_impl.py:polyval:703,chebyshev.py:cheb2poly:397,0.0,0.0,0.0
+Add one Laguerre series to another.,laguerre.py:lagadd:309,laguerre.py:lagmulx:389,0.0,1.0,0.3333333333333333
+"Convert `x` to double if it has real, negative components.",_scimath_impl.py:_fix_int_lt_zero:126,_scimath_impl.py:_fix_real_abs_gt_1:154,0.0,0.0,0.1111111111111111
+Create MachAr instance with found information on float types,getlimits.py:_discovered_machar:370,getlimits.py:_float_to_float:92,0.0,1.0,0.5
+Return a class method wrapper around a basic array method.,core.py:_arraymethod:2611,defmatrix.py:A:844,0.0,1.0,0.5
+"Return the maximum of an array or maximum along an axis, ignoring any",_nanfunctions_impl.py:nanmax:384,defmatrix.py:max:617,0.0,0.0,0.0
+Return argument as a list of 1-d arrays.,polyutils.py:as_series:66,shape_base.py:atleast_2d:81,0.0,0.0,0.0
+"Implement an in-place binary method with a ufunc, e.g., __iadd__.",mixins.py:_inplace_binary_method:38,mixins.py:_numeric_methods:46,0.0,1.0,0.5
+Return the product of array elements over a given axis.,fromnumeric.py:prod:3329,shape_base.py:stack:381,0.0,0.0,0.0
+Private function validating the given `fill_value` for the given dtype.,core.py:_check_fill_value:458,core.py:default_fill_value:252,0.0,1.0,0.3333333333333333
+Internal version of array_str() that allows overriding array2string.,arrayprint.py:_array_str_implementation:1685,arrayprint.py:array_str:1711,0.0,0.0,0.16666666666666666
+Give a new shape to the array without changing its data.,core.py:reshape:4792,core.py:array:6905,0.0,0.0,0.0
+"Evaluate a 2-D Hermite series at points (x, y).",hermite.py:hermval2d:893,hermite.py:_normed_hermite_n:1551,0.0,0.0,0.0
+Return the indices of the bins to which each value in input array belongs.,_function_base_impl.py:digitize:5719,_histograms_impl.py:_get_bin_edges:361,0.0,1.0,0.25
+"Return True if all entries of a and b are equal, using",core.py:allequal:8428,defchararray.py:equal:61,0.0,1.0,0.5
+Actually do the multiplication with the given order.,_linalg.py:_multi_dot:3023,_polynomial_impl.py:order:1209,0.0,0.0,0.0
+"Evaluate a 3-D Hermite series at points (x, y, z).",hermite.py:hermval3d:1005,hermite.py:_normed_hermite_n:1551,0.0,0.0,0.0
+Flatten the mask and returns a (maybe nested) sequence of booleans.,core.py:_flatmask:1846,core.py:flatten_mask:1813,0.0,1.0,0.3333333333333333
+Vandermonde matrix of given degree.,polynomial.py:polyvander:1065,polyutils.py:_vander_nd:364,0.0,0.0,0.0
+Return True if x is a not complex type or an array of complex numbers.,_type_check_impl.py:isrealobj:313,_type_check_impl.py:common_type:647,0.0,1.0,0.2
+The name of the polynomial variable,_polynomial_impl.py:variable:1203,_polybase.py:_get_coefficients:257,0.0,0.0,0.125
+Fail unless the given callable throws the specified warning.,utils.py:assert_warns:1902,utils.py:assert_no_warnings:1972,0.0,0.0,0.16666666666666666
+Implement ``x in self``.,_nested_sequence.py:__contains__:71,core.py:__init__:850,0.0,1.0,0.5
+Suppress slices from multiple dimensions which contain masked values.,extras.py:compress_nd:879,core.py:masked_values:2324,0.0,0.0,0.0
+Determine whether input has masked values.,core.py:is_masked:6922,core.py:masked_not_equal:2113,0.0,0.0,0.16666666666666666
+Return a copy with masked fields filled with a given value.,core.py:filled:6679,core.py:masked_not_equal:2113,0.0,0.0,0.0
+Permute the dimensions of an array.,core.py:transpose:7643,numeric.py:indices:1746,0.0,0.0,0.0
+Legendre series whose graph is a straight line.,legendre.py:legline:229,legendre.py:poly2leg:100,0.0,0.0,0.0
+use meson to build,extbuild.py:build:216,_meson.py:write_meson_build:159,0.0,1.0,0.5
+Remove small Poly series coefficients.,polyutils.py:trimseq:37,polynomial.py:polymulx:289,0.0,0.0,0.0
+"For each element in `a`, return a copy with the trailing characters",strings.py:rstrip:946,_function_base_impl.py:copy:899,0.0,0.0,0.1111111111111111
+Returns the square identity matrix of given size.,matlib.py:identity:154,_linalg.py:matrix_power:618,0.0,1.0,0.5
+"If input is complex with all imaginary parts close to zero, return",_type_check_impl.py:real_if_close:490,symbolic.py:as_complex:1003,0.0,1.0,0.25
+Recursively parse array dimensions.,crackfortran.py:param_parse:3058,_function_base_impl.py:_parse_input_dimensions:2212,0.0,1.0,0.5
+Recursively fill `a` with `fill_value`.,core.py:_recursive_filled:2541,core.py:filled:6679,0.0,1.0,0.3333333333333333
+Take elements from an array along an axis.,fromnumeric.py:take:110,_arraypad_impl.py:_slice_at_axis:33,0.0,0.0,0.0
+Asserts the equality of two non-array sequences.,testutils.py:_assert_equal_on_sequences:86,testutils.py:assert_array_less:273,0.0,0.0,0.14285714285714285
+Subtract one Chebyshev series from another.,chebyshev.py:chebsub:611,chebyshev.py:chebmul:700,0.0,0.0,0.16666666666666666
+Integrate a Legendre series.,legendre.py:legint:704,legendre.py:poly2leg:100,0.0,1.0,0.25
+Join arrays `r1` and `r2` on key `key`.,recfunctions.py:join_by:1484,recfunctions.py:rec_join:1670,0.0,1.0,0.5
+Return (self >= other) element-wise.,defchararray.py:__ge__:622,defchararray.py:__gt__:642,0.0,1.0,0.2
+"Replace masked values with masked_print_option, casting all innermost",core.py:_insert_masked_print:4056,core.py:masked_values:2324,0.0,0.0,0.0
+Expand the shape of an array.,_shape_base_impl.py:expand_dims:512,shape_base.py:stack:381,0.0,1.0,0.5
+Enables dir(bagobj) to list the files in an NpzFile.,_npyio_impl.py:__dir__:82,_npyio_impl.py:zipfile_factory:91,0.0,0.0,0.0
+"Find the best converter for a given string, and return the result.",_iotools.py:upgrade:725,symbolic.py:fromstring:1271,0.0,0.0,0.0
+Return each element rounded to the given number of decimals.,core.py:round:5610,fromnumeric.py:round:3619,0.0,1.0,0.25
+"Return a, b such that a * symbol + b == self.",symbolic.py:linear_solve:774,core.py:__init__:850,0.0,0.0,0.0
+Interpret the input as a matrix.,defmatrix.py:asmatrix:36,_linalg.py:transpose:214,0.0,0.0,0.1111111111111111
+Empty masked array with all elements masked.,extras.py:masked_all:102,core.py:masked_object:2255,0.0,1.0,0.25
+Computes the matrix product.,_linalg.py:matmul:3303,_linalg.py:_multi_dot_matrix_chain_order:2982,0.0,0.0,0.0
+Indexes of the minimum values along an axis.,defmatrix.py:argmin:726,defmatrix.py:min:691,0.0,0.0,0.0
+Compare self with other using operator.eq or operator.ne.,core.py:_comparison:4203,core.py:__ne__:4290,0.0,0.0,0.0
+Find the intersection of two arrays.,_arraysetops_impl.py:intersect1d:618,extras.py:intersect1d:1355,0.0,1.0,0.5
+Transforms a masked array into a flexible-type array.,core.py:toflex:6468,core.py:get_masked_subclass:686,0.0,0.0,0.0
+Converts an n-D structured array into an (n+1)-D unstructured array.,recfunctions.py:structured_to_unstructured:941,_twodim_base_impl.py:diagflat:319,0.0,0.0,0.0
+"domain_check_interval(a,b)(x) = true where x < a or y > b",core.py:__init__:850,defchararray.py:greater_equal:129,0.0,0.0,0.0
+Test if two strings are equal.,utils.py:assert_string_equal:1261,defchararray.py:equal:61,0.0,1.0,0.2
+Returns element-wise base array raised to power from second array.,core.py:power:7169,_linalg.py:matrix_power:618,0.0,1.0,0.25
+Return a string representation of the data in an array.,arrayprint.py:array_str:1711,core.py:fromflex:8706,0.0,1.0,0.3333333333333333
+reset=-1  --- initialize,crackfortran.py:crackline:696,defmatrix.py:_collapse:259,0.0,0.0,0.0
+Return a string representation of an array.,arrayprint.py:array2string:606,symbolic.py:as_string:989,0.0,0.0,0.0
+"Creates a string repr of the dtype, excluding the 'dtype()' part",_dtype.py:_construction_repr:68,arrayprint.py:dtype_short_repr:1537,0.0,1.0,0.25
+Multiply a polynomial by x.,polynomial.py:polymulx:289,chebyshev.py:cheb2poly:397,0.0,0.0,0.0
+Differentiate a Laguerre series.,laguerre.py:lagder:592,laguerre.py:lagmulx:389,0.0,0.0,0.0
+Compute the sign and (natural) logarithm of the determinant of an array.,_linalg.py:slogdet:2247,_linalg.py:det:2332,0.0,1.0,0.5
+Open a .npy file as a memory-mapped array.,format.py:open_memmap:864,_npyio_impl.py:save:502,0.0,1.0,0.2
+"Compute the standard deviation along the specified axis, while",_nanfunctions_impl.py:nanstd:1906,hermite_e.py:_normed_hermite_e_n:1469,0.0,0.0,0.14285714285714285
+Finalizes the masked array.,core.py:__array_finalize__:3050,core.py:get_masked_subclass:686,0.0,0.0,0.0
+Return a description for the given data type code.,_type_check_impl.py:typename:575,_inspect.py:iscode:41,0.0,0.0,0.0
+The degree of the series.,_polybase.py:degree:677,chebyshev.py:cheb2poly:397,0.0,1.0,0.5
+Integrate along the given axis using the composite trapezoidal rule.,_function_base_impl.py:trapezoid:4960,_function_base_impl.py:trapz:5095,0.0,1.0,0.25
+Compute the eigenvalues and right eigenvectors of a square array.,_linalg.py:eig:1332,_linalg.py:eigvals:1134,0.0,1.0,0.3333333333333333
+Broadcast an array to a new shape.,_stride_tricks_impl.py:broadcast_to:368,_stride_tricks_impl.py:broadcast_shapes:434,0.0,1.0,0.5
+"Return a boolean mask of the given shape, filled with False.",core.py:make_mask_none:1695,core.py:masked_where:1882,0.0,0.0,0.0
+Check that ufuncs don't mishandle refcount of object `1`.,utils.py:_assert_valid_refcount:1549,overrides.py:allows_array_ufunc_override:27,0.0,1.0,0.25
+Return the indices to access the main diagonal of an n-dimensional array.,_index_tricks_impl.py:diag_indices_from:1019,_index_tricks_impl.py:diag_indices:948,0.0,1.0,0.25
+Determines the leading whitespace that could be removed from all the lines.,_utils_impl.py:_get_indent:186,arrayprint.py:_extendLine_pretty:801,0.0,1.0,0.25
+Return the current print options.,arrayprint.py:get_printoptions:319,arrayprint.py:_get_legacy_print_mode:367,0.0,1.0,0.3333333333333333
+Returns a boolean array where two arrays are element-wise equal within a,numeric.py:isclose:2338,defchararray.py:equal:61,0.0,0.0,0.0
+"Load data from a text file, with missing values handled as specified.",_npyio_impl.py:genfromtxt:1749,_npyio_impl.py:fromregex:1646,0.0,0.0,0.1111111111111111
+Return `a` where condition is ``True``.,core.py:compress:3983,multiarray.py:where:384,0.0,0.0,0.0
+Returns an array containing the same data with a new shape.,core.py:reshape:7682,numeric.py:full:292,0.0,0.0,0.0
+Mask an array inside a given interval.,core.py:masked_inside:2173,core.py:array:6905,0.0,1.0,0.2
+Return the numeric string left-filled with zeros. A leading,strings.py:zfill:851,numeric.py:base_repr:2123,0.0,0.0,0.0
+Divide one Legendre series by another.,legendre.py:legdiv:534,chebyshev.py:chebmul:700,0.0,0.0,0.0
+"Evaluate a 2-D Laguerre series at points (x, y).",laguerre.py:lagval2d:891,laguerre.py:lagmul:443,0.0,1.0,0.25
+"Returns a flat list of (dtype, count, offset) tuples of all the",recfunctions.py:_get_fields_and_offsets:854,_iotools.py:flatten_dtype:84,0.0,0.0,0.0
+Estimate the covariance matrix.,extras.py:cov:1619,_function_base_impl.py:cov:2681,0.0,1.0,0.5
+"Return the next value, or raise StopIteration.",core.py:__next__:2737,_index_tricks_impl.py:__next__:625,0.0,0.0,0.0
+"Return the internal state of the masked array, for pickling",core.py:__getstate__:6530,core.py:get_masked_subclass:686,0.0,0.0,0.0
+"Returns the filled array, or True if masked.",core.py:fmask:8098,core.py:get_fill_value:578,0.0,0.0,0.0
+Convert all docstrings in ``_docstrings_list`` into a single,_add_docstring.py:_parse_docstrings:27,_add_docstring.py:add_newdoc:11,0.0,1.0,0.5
+Return the cumulative sum of the array elements over the given axis.,core.py:cumsum:5301,defmatrix.py:sum:293,0.0,0.0,0.14285714285714285
+Compute the natural logarithm of `x`.,_scimath_impl.py:log:244,_scimath_impl.py:logn:350,0.0,1.0,0.5
+Return object as INTEGER or REAL constant.,symbolic.py:as_number:950,symbolic.py:as_integer:963,0.0,1.0,0.5
+"Return (self % i), that is pre-Python 2.6 string formatting",defchararray.py:__mod__:706,symbolic.py:as_string:989,0.0,0.0,0.0
+Least squares fit of Legendre series to data.,legendre.py:legfit:1246,legendre.py:legder:614,0.0,0.0,0.0
+A decorator that makes an exception class look like its base.,_exceptions.py:_display_as_base:17,__init__.py:set_module:16,0.0,1.0,0.25
+Returns the quotient and remainder of polynomial division.,_polynomial_impl.py:polydiv:980,_polybase.py:degree:677,0.0,0.0,0.0
+"Determine the outer bin edges to use, from either the data or the range",_histograms_impl.py:_get_outer_edges:303,_histograms_impl.py:_get_bin_edges:361,0.0,1.0,0.3333333333333333
+Return the Blackman window.,_function_base_impl.py:blackman:3059,_polybase.py:has_samewindow:225,0.0,1.0,0.5
+The Freedman-Diaconis histogram bin estimator.,_histograms_impl.py:_hist_bin_fd:199,_histograms_impl.py:_hist_bin_stone:122,0.0,0.0,0.125
+Replace values in `a` with NaN where `mask` is True.  This differs from,_nanfunctions_impl.py:_copyto:115,_nanfunctions_impl.py:_replace_nan:70,0.0,0.0,0.0
+Return the cumulative sum of array elements over a given axis treating Not a,_nanfunctions_impl.py:nancumsum:819,defmatrix.py:sum:293,0.0,1.0,0.25
+Build a new MaskedArray from the information stored in a pickle.,mrecords.py:_mrreconstruct:478,core.py:choose:8052,0.0,0.0,0.0
+Return a new masked array with the specified size and shape.,core.py:resize:7732,core.py:masked_object:2255,0.0,0.0,0.0
+"Return a masked array with elements from `x` or `y`, depending on condition.",core.py:where:7960,core.py:masked_not_equal:2113,0.0,0.0,0.0
+Lower triangle of an array.,_twodim_base_impl.py:tril:442,arrayprint.py:array_str:1711,0.0,0.0,0.0
+Set exclusive-or of 1-D arrays with unique elements.,extras.py:setxor1d:1388,_arraysetops_impl.py:setxor1d:714,0.0,1.0,0.25
+Add other to self in-place.,core.py:__iadd__:4422,defchararray.py:__add__:662,0.0,0.0,0.0
+Get a serializable descriptor from the dtype.,format.py:dtype_to_descr:245,core.py:_get_dtype_of:242,0.0,1.0,0.25
+Return the maximum value that can be represented by the dtype of an object.,core.py:minimum_fill_value:322,core.py:maximum_fill_value:374,0.0,0.0,0.0
+"Return a copy of a, rounded to 'decimals' places.",core.py:round_:8128,fromnumeric.py:round:3619,0.0,1.0,0.3333333333333333
+"Return a new array of given shape and type, filled with ones.",numeric.py:ones:139,_function_base_impl.py:_create_arrays:2249,0.0,0.0,0.0
+Unpack a structured data-type by collapsing nested fields and/or fields,_iotools.py:flatten_dtype:84,recfunctions.py:structured_to_unstructured:941,0.0,0.0,0.16666666666666666
+String representation of a single polynomial term using ** and _ to,_polybase.py:_str_term_ascii:410,_polybase.py:_generate_string:349,0.0,0.0,0.16666666666666666
+Compute the one-dimensional discrete Fourier Transform for real input.,_pocketfft.py:rfft:319,_pocketfft.py:ifft:214,0.0,1.0,0.3333333333333333
+Returns the shape of the arrays that would result from broadcasting the,_stride_tricks_impl.py:_broadcast_shape:413,_stride_tricks_impl.py:broadcast_shapes:434,0.0,1.0,0.25
+Build a masked array from a suitable flexible-type array.,core.py:fromflex:8706,core.py:get_masked_subclass:686,0.0,0.0,0.0
+Create the masked_print_option object.,core.py:__init__:2444,arrayprint.py:set_printoptions:114,0.0,0.0,0.0
+Defines an iterator for mvoid,core.py:__iter__:6664,core.py:__next__:2737,0.0,0.0,0.0
+Compute the N-dimensional discrete Fourier Transform for real input.,_pocketfft.py:rfftn:1261,_pocketfft.py:ifft:214,0.0,1.0,0.25
+"Compute the qth percentile of the data along the specified axis,",_nanfunctions_impl.py:nanpercentile:1229,_function_base_impl.py:percentile:4068,0.0,1.0,0.3333333333333333
+"Compute the arithmetic mean along the specified axis, ignoring NaNs.",_nanfunctions_impl.py:nanmean:955,_nanfunctions_impl.py:nansum:636,0.0,1.0,0.3333333333333333
+Stack arrays in sequence vertically (row wise).,shape_base.py:vstack:221,_shape_base_impl.py:column_stack:622,0.0,0.0,0.0
+Return the minimum along a given axis.,core.py:min:5906,defmatrix.py:min:691,0.0,0.0,0.0
+Parse string signatures for a generalized universal function.,_function_base_impl.py:_parse_gufunc_signature:2153,_internal.py:_ufunc_doc_signature_formatter:893,0.0,1.0,0.5
+Set the default format for the string representation of polynomials.,__init__.py:set_default_printstyle:136,_polybase.py:_generate_string:349,0.0,1.0,0.5
+Union of two arrays.,extras.py:union1d:1502,_arraysetops_impl.py:union1d:1141,0.0,1.0,0.5
+Create a recarray from a list of records in text form.,records.py:fromrecords:667,mrecords.py:fromrecords:538,0.0,0.0,0.0
+Test whether input is an instance of MaskedArray.,core.py:isMaskedArray:6732,core.py:get_masked_subclass:686,0.0,1.0,0.5
+Return a matrix with ones on the diagonal and zeros elsewhere.,matlib.py:eye:190,fromnumeric.py:diagonal:1696,0.0,0.0,0.0
+"Like `find`, but raises :exc:`ValueError` when the substring is not",defchararray.py:index:835,symbolic.py:contains:716,0.0,0.0,0.0
+Evaluate a Chebyshev series at points x.,chebyshev.py:chebval:1089,chebyshev.py:chebmulx:655,0.0,0.0,0.0
+Literal string representation.,core.py:__repr__:4090,symbolic.py:as_string:989,0.0,0.0,0.0
+Get a view of the current region of interest during iterative padding.,_arraypad_impl.py:_view_roi:58,_arraypad_impl.py:_set_reflect_both:296,0.0,0.0,0.16666666666666666
+Asserts that two items are equal.,testutils.py:assert_equal:112,testutils.py:assert_equal_records:97,0.0,1.0,0.25
+Converts an n-D unstructured array into an (n-1)-D structured array.,recfunctions.py:unstructured_to_structured:1076,core.py:flatten_structured_array:2555,0.0,0.0,0.0
+Multiply a Chebyshev series by x.,chebyshev.py:chebmulx:655,chebyshev.py:chebmul:700,0.0,1.0,0.5
+"For each element in `self`, return a list of the words in the",defchararray.py:split:1077,defmatrix.py:tolist:270,0.0,0.0,0.0
+Checks that field names ``descr`` are not reserved keywords.,mrecords.py:_checknames:36,recfunctions.py:_get_fieldspec:72,0.0,1.0,0.2
+Return the imaginary part of the complex argument.,_type_check_impl.py:imag:132,symbolic.py:as_complex:1003,0.0,0.0,0.0
+"Force the mask to hard, preventing unmasking by assignment.",core.py:harden_mask:3630,mrecords.py:soften_mask:400,0.0,0.0,0.1
+Calculates the repr representation.,mrecords.py:__repr__:340,arrayprint.py:array_repr:1629,0.0,0.0,0.0
+Create a new masked array from scratch.,core.py:__new__:2879,core.py:get_masked_subclass:686,0.0,0.0,0.0
+Create an expression from a string.,symbolic.py:fromstring:1271,symbolic.py:as_string:989,0.0,1.0,0.5
+Compute the roots of a HermiteE series.,hermite_e.py:hermeroots:1405,hermite.py:_normed_hermite_n:1551,0.0,0.0,0.0
+Return (maximum - minimum) along the given dimension,core.py:ptp:6110,defmatrix.py:min:691,0.0,0.0,0.16666666666666666
+Return (x1 <= x2) element-wise.,defchararray.py:less_equal:164,defchararray.py:greater_equal:129,0.0,1.0,0.3333333333333333
+Interchange two axes of an array.,fromnumeric.py:swapaxes:579,shape_base.py:stack:381,0.0,0.0,0.0
+Return the dot product of two arrays.,core.py:dot:8203,multiarray.py:dot:762,0.0,0.0,0.0
+Split array into multiple sub-arrays along the 3rd axis (depth).,_shape_base_impl.py:dsplit:1012,_shape_base_impl.py:split:804,0.0,0.0,0.1
+Returns whether one or several fields of a dtype are nested.,_iotools.py:has_nested_fields:59,core.py:_get_dtype_of:242,0.0,1.0,0.5
+Return a copy of `self` with only the first character of each element,defchararray.py:capitalize:742,defchararray.py:strip:1113,0.0,0.0,0.0
+"Evaluate a 3-D Laguerre series on the Cartesian product of x, y, and z.",laguerre.py:laggrid3d:1050,chebyshev.py:_zseries_der:277,0.0,0.0,0.16666666666666666
+Return arrays with the results of `pyfunc` broadcast (vectorized) over,_function_base_impl.py:_call_as_normal:2487,_stride_tricks_impl.py:broadcast_shapes:434,0.0,0.0,0.0
+Check if coefficients match.,_polybase.py:has_samecoef:188,_polybase.py:_get_coefficients:257,0.0,0.0,0.0
+Linear map parameters between domains.,polyutils.py:mapparms:241,polyutils.py:mapdomain:288,0.0,0.0,0.1
+Return the current callback function used on floating-point errors.,_ufunc_config.py:geterrcall:308,getlimits.py:_float_to_float:92,0.0,0.0,0.0
+"Get help information for an array, function, class, or module.",_utils_impl.py:info:414,defmatrix.py:A:844,0.0,0.0,0.0
+Validate weights array.,_function_base_impl.py:_weights_are_valid:385,_histograms_impl.py:_ravel_and_check_weights:282,0.0,1.0,0.25
+"Returns the underlying data, as a view of the masked array.",core.py:_get_data:3771,core.py:get_masked_subclass:686,0.0,0.0,0.0
+Display a message on a device.,_function_base_impl.py:disp:2088,_array_api_info.py:devices:321,0.0,1.0,0.3333333333333333
+Truncate series to the given degree.,_polybase.py:cutdeg:710,chebyshev.py:cheb2poly:397,0.0,0.0,0.0
+Return an ndarray of the provided type that satisfies requirements.,_asarray.py:require:29,numerictypes.py:obj2sctype:235,0.0,0.0,0.0
+Compute the (Moore-Penrose) pseudo-inverse of a matrix.,_linalg.py:pinv:2129,_linalg.py:cond:1886,0.0,0.0,0.1111111111111111
+"By using this local function, we don't need to recurse with all the",arrayprint.py:recurser:837,overrides.py:get_overridable_numpy_array_functions:50,0.0,0.0,0.0
+Return a full array with the same shape and type as a given array.,numeric.py:full_like:368,numeric.py:full:292,0.0,1.0,0.25
+Sets the given record to value.,mrecords.py:__setitem__:317,core.py:common_fill_value:591,0.0,0.0,0.0
+Return element-wise title cased version of string or unicode.,strings.py:title:1190,_string_helpers.py:english_capitalize:72,0.0,1.0,0.3333333333333333
+Determine if the first argument is a subclass of the second argument.,numerictypes.py:issubsctype:332,numerictypes.py:issubdtype:472,0.0,1.0,0.3333333333333333
+Returns True if input arrays are shape consistent and all elements equal.,numeric.py:array_equiv:2566,numeric.py:array_equal:2476,0.0,0.0,0.0
+"Return an array drawn from elements in choicelist, depending on conditions.",_function_base_impl.py:select:787,fromnumeric.py:choose:334,0.0,1.0,0.5
+Convert the argument for *_fill_value into a dtype,core.py:_get_dtype_of:242,core.py:default_fill_value:252,0.0,0.0,0.0
+"Build a matrix object from a string, nested sequence, or array.",defmatrix.py:bmat:1042,core.py:flatten_structured_array:2555,0.0,1.0,0.5
+"Evaluate a 2-D Legendre series at points (x, y).",legendre.py:legval2d:913,legendre.py:poly2leg:100,0.0,0.0,0.0
+Vectorized call over positional arguments with a signature.,_function_base_impl.py:_vectorize_call_with_signature:2614,_function_base_impl.py:_vectorize_call:2593,0.0,1.0,0.5
+Reverse the order of elements along axis 0 (up/down).,_twodim_base_impl.py:flipud:106,_function_base_impl.py:flip:249,0.0,0.0,0.0
+This method is called when this class is used as the .restype,ctypeslib.py:_check_retval_:207,mixins.py:_binary_method:18,0.0,0.0,0.0
+Upper triangle of an array.,_twodim_base_impl.py:triu:498,extras.py:ediff1d:1267,0.0,0.0,0.0
+Suppress whole rows of a 2-D array that contain masked values.,extras.py:compress_rows:993,extras.py:mask_rowcols:1073,0.0,0.0,0.0
+"Like `find`, but raises :exc:`ValueError` when the substring is not found.",strings.py:index:315,symbolic.py:contains:716,0.0,0.0,0.0
+Return the sum along diagonals of the array.,fromnumeric.py:trace:1832,_index_tricks_impl.py:fill_diagonal:816,0.0,0.0,0.0
+Return the character for the minimum-size type to which given types can,_type_check_impl.py:mintypecode:26,strings.py:_get_num_chars:87,0.0,1.0,0.2
+View inputs as arrays with at least two dimensions.,shape_base.py:atleast_2d:81,_twodim_base_impl.py:tril_indices_from:984,0.0,0.0,0.0
+Take elements from a masked array along an axis.,core.py:take:6211,extras.py:mask_rowcols:1073,0.0,1.0,0.2
+Return numbers spaced evenly on a log scale.,function_base.py:logspace:196,_exceptions.py:_size_to_string:131,0.0,1.0,0.3333333333333333
+Inverse of eliminate_quotes.,symbolic.py:insert_quotes:1201,symbolic.py:eliminate_quotes:1172,0.0,1.0,0.3333333333333333
+Return the data portion of the masked array as a hierarchical Python list.,core.py:tolist:6347,core.py:masked_object:2255,0.0,0.0,0.0
+"For each element in `self`, return a list of the words in",defchararray.py:rsplit:1053,defmatrix.py:tolist:270,0.0,0.0,0.0
+Returns True if any of the elements of `a` evaluate to True.,core.py:any:5059,defchararray.py:not_equal:95,0.0,0.0,0.0
+Evaluate a 2-D Chebyshev series on the Cartesian product of x and y.,chebyshev.py:chebgrid2d:1214,chebyshev.py:chebmul:700,0.0,0.0,0.16666666666666666
+"Convert the input to a masked array, conserving subclasses.",core.py:asanyarray:8646,core.py:get_masked_subclass:686,0.0,0.0,0.16666666666666666
+Range of values (maximum - minimum) along an axis.,fromnumeric.py:ptp:2963,core.py:ptp:6110,0.0,0.0,0.0
+Returns pointers to the end-points of an array.,_array_utils_impl.py:byte_bounds:12,ctypeslib.py:as_array:520,0.0,0.0,0.0
+Construct a dtype object from a ctypes type,_dtype_ctypes.py:dtype_from_ctypes_type:103,ctypeslib.py:as_ctypes_type:463,0.0,1.0,0.5
+"Add other to self, and return a new masked array.",core.py:__radd__:4325,core.py:get_masked_subclass:686,0.0,0.0,0.0
+Return the real part of the complex argument.,_type_check_impl.py:real:85,symbolic.py:as_complex:1003,0.0,1.0,0.25
+Copies some attributes of obj to self.,core.py:_update_from:3024,_polybase.py:copy:666,0.0,1.0,0.25
+"Compute the dot product of two or more arrays in a single function call,",_linalg.py:multi_dot:2842,_linalg.py:_multi_dot:3023,0.0,1.0,0.5
+Apply English case rules to convert ASCII strings to all lower case.,_string_helpers.py:english_lower:16,_string_helpers.py:english_capitalize:72,0.0,1.0,0.5
+Raises an AssertionError if two array_like objects are not equal.,utils.py:assert_array_equal:897,testutils.py:fail_if_array_equal:234,0.0,1.0,0.5
+Mask rows of a 2D array that contain masked values.,extras.py:mask_rows:1162,extras.py:mask_rowcols:1073,0.0,0.0,0.16666666666666666
+Return (self != other) element-wise.,defchararray.py:__ne__:612,core.py:__rpow__:4415,0.0,1.0,0.3333333333333333
+Private function for rank 1 arrays. Compute the median ignoring NaNs.,_nanfunctions_impl.py:_nanmedian1d:1059,_utils_impl.py:_median_nancheck:643,0.0,1.0,0.3333333333333333
+Raises an assertion error if two masked arrays are not equal elementwise.,testutils.py:fail_if_array_equal:234,testutils.py:assert_mask_equal:283,0.0,0.0,0.0
+Replace a type-alias with a concrete ``NBitBase`` subclass.,mypy_plugin.py:_hook:122,core.py:_mareconstruct:6581,0.0,1.0,0.25
+"Raise self to the power other, in place.",core.py:__ipow__:4531,core.py:__rpow__:4415,0.0,0.0,0.0
+List all numpy ufuncs overridable via `__array_ufunc__`,overrides.py:get_overridable_numpy_ufuncs:10,overrides.py:get_overridable_numpy_array_functions:50,0.0,1.0,0.5
+Construct tuple of slices to slice an array in the given dimension.,_arraypad_impl.py:_slice_at_axis:33,_arrayterator_impl.py:__array__:131,0.0,1.0,0.25
+Reverse the order of elements along axis 1 (left/right).,_twodim_base_impl.py:fliplr:50,_linalg.py:transpose:214,0.0,0.0,0.0
+Compute the 'inverse' of an N-dimensional array.,_linalg.py:tensorinv:420,_function_base_impl.py:flip:249,0.0,0.0,0.0
+Weight function of the Hermite polynomials.,hermite.py:hermweight:1662,hermite.py:_normed_hermite_n:1551,0.0,1.0,0.2
+Set the string to print for masked values.,core.py:set_display:2459,core.py:masked_equal:2140,0.0,0.0,0.0
+Compute the inverse of a matrix.,_linalg.py:inv:497,_linalg.py:transpose:214,0.0,0.0,0.0
+Return the Discrete Fourier Transform sample frequencies.,_helper.py:fftfreq:126,_pocketfft.py:ifft:214,0.0,0.0,0.16666666666666666
+Return a list of tuples for each function or subroutine each,_src_pyf.py:parse_structure:55,_arraysetops_impl.py:_unpack_tuple:132,0.0,0.0,0.0
+Subtract other from self in-place.,core.py:__isub__:4440,core.py:__rsub__:4343,0.0,0.0,0.0
+Raises an assertion error if two items are equal.,testutils.py:fail_if_equal:151,testutils.py:assert_equal_records:97,0.0,0.0,0.125
+Compute the eigenvalues of a general matrix.,_linalg.py:eigvals:1134,_linalg.py:svd:1640,0.0,1.0,0.5
+Cache the file specified by path.,_datasource.py:_cache:314,_datasource.py:_findfile:340,0.0,1.0,0.5
+Compute the variance along the specified axis.,fromnumeric.py:var:4074,chebyshev.py:chebder:874,0.0,0.0,0.0
+"Multiply other by self, and return a new masked array.",core.py:__rmul__:4356,core.py:masked_object:2255,0.0,0.0,0.0
+Compute the N-dimensional inverse discrete Fourier Transform.,_pocketfft.py:ifftn:882,_pocketfft.py:ifft:214,0.0,0.0,0.16666666666666666
+The function replace all spaces in the input variable line which are,crackfortran.py:markinnerspaces:1650,strings.py:strip:989,0.0,1.0,0.5
+Check FPU precision mode was not changed during test collection.,conftest.py:pytest_itemcollected:104,conftest.py:check_fpu_mode:124,0.0,1.0,0.5
+float_conv - convert integer to float (array),_machar.py:__init__:104,getlimits.py:_float_conv:102,0.0,0.0,0.125
+Return the cross product of two (arrays of) vectors.,numeric.py:cross:1523,_linalg.py:cross:3224,0.0,1.0,0.5
+Deprecated getter for the `_ctypes.data` property.,_internal.py:get_data:369,_internal.py:_as_parameter_:359,0.0,1.0,0.2
+Multidimensional index iterator.,extras.py:ndenumerate:1857,numeric.py:indices:1746,0.0,0.0,0.0
+Return the indices of the maximum values in the specified axis ignoring,_nanfunctions_impl.py:nanargmax:573,defmatrix.py:max:617,0.0,1.0,0.3333333333333333
+"Test element-wise for positive infinity, return result as bool array.",_ufunclike_impl.py:isposinf:71,testutils.py:assert_array_less:273,0.0,0.0,0.0
+Returns array of indices of the maximum values along the given axis.,core.py:argmax:5775,defmatrix.py:max:617,0.0,1.0,0.3333333333333333
+"Returns the variance of the matrix elements, along the given axis.",defmatrix.py:var:487,_linalg.py:svd:1640,0.0,1.0,0.2
+Indexes of the maximum values along an axis.,defmatrix.py:argmax:652,defmatrix.py:max:617,0.0,0.0,0.0
+"Convert a list of indices ``[0, 1, 2]`` into ``""arrays[0][1][2]""``.",shape_base.py:_block_format_index:550,_index_tricks_impl.py:ix_:35,0.0,0.0,0.16666666666666666
+Convert Chebyshev series to z-series.,chebyshev.py:_cseries_to_zseries:133,chebyshev.py:chebmul:700,0.0,1.0,0.5
+Returns the unique elements common to both arrays.,extras.py:intersect1d:1355,extras.py:unique:1305,0.0,0.0,0.16666666666666666
+"Return a copy of self, with masked values filled with a given value.",core.py:filled:3866,core.py:masked_not_equal:2113,0.0,0.0,0.0
+"Evaluate a 3-D Chebyshev series on the Cartesian product of x, y, and z.",chebyshev.py:chebgrid3d:1306,chebyshev.py:chebmul:700,0.0,1.0,0.25
+Return the number of dimensions of an array.,fromnumeric.py:ndim:3524,numeric.py:indices:1746,0.0,1.0,0.5
+Read the magic string to get the version of the file format.,format.py:read_magic:225,_pep440.py:parse:117,0.0,0.0,0.0
+"D.get(k,[,d]) returns D[k] if k in D, else d.  d defaults to None.",_npyio_impl.py:get:283,extras.py:vander:2273,0.0,0.0,0.0
+Least squares fit of Laguerre series to data.,laguerre.py:lagfit:1289,laguerre.py:lagmul:443,0.0,1.0,0.5
+Return a contiguous flattened array.,fromnumeric.py:ravel:1905,extras.py:flatnotmasked_contiguous:2034,0.0,0.0,0.0
+Multiply two z-series.,chebyshev.py:_zseries_mul:183,chebyshev.py:_cseries_to_zseries:133,0.0,0.0,0.16666666666666666
+The default data types used for new NumPy arrays.,_array_api_info.py:default_dtypes:134,ctypeslib.py:_ctype_ndarray:349,0.0,0.0,0.0
+Calls ``bytes.decode`` element-wise.,defchararray.py:decode:777,strings.py:decode:510,0.0,1.0,0.3333333333333333
+"Return a flat iterator, or set a flattened version of self to value.",core.py:flat:3792,_arrayterator_impl.py:flat:141,0.0,1.0,0.5
+"For each element in `self`, return the highest index in the string",defchararray.py:rfind:1006,_nested_sequence.py:index:87,0.0,0.0,0.0
+A convenience function for operations that need to preserve axis,defmatrix.py:_align:246,_arraypad_impl.py:_slice_at_axis:33,0.0,1.0,0.3333333333333333
+Clip (limit) the values in an array.,fromnumeric.py:clip:2242,core.py:array:6905,0.0,1.0,0.2
+Sets the attribute attr to the value val.,mrecords.py:__setattr__:229,_npyio_impl.py:values:301,0.0,1.0,0.5
+Get or set the mask of the array if it has no named fields. For,core.py:recordmask:3608,core.py:fromflex:8706,0.0,0.0,0.0
+Get an ndarray viewing the data pointed to by this pointer.,ctypeslib.py:contents:216,mrecords.py:_data:156,0.0,0.0,0.16666666666666666
+Open and return file-like object.,_datasource.py:open:483,mrecords.py:openfile:640,0.0,1.0,0.25
+Return an antiderivative (indefinite integral) of this polynomial.,_polynomial_impl.py:integ:1430,legendre.py:leg2poly:149,0.0,1.0,0.3333333333333333
+Returns a view of the mrecarray.,mrecords.py:view:353,recfunctions.py:_fix_output:328,0.0,0.0,0.0
+Compute the 2-dimensional FFT of a real array.,_pocketfft.py:rfft2:1388,_pocketfft.py:fft2:1014,0.0,0.0,0.0
+String representation of single polynomial term using unicode,_polybase.py:_str_term_unicode:396,_polybase.py:_generate_string:349,0.0,1.0,0.5
+Return the data of a masked array as an ndarray.,core.py:getdata:713,core.py:masked_object:2255,0.0,0.0,0.0
+Computes the inverse of `rfft2`.,_pocketfft.py:irfft2:1607,_pocketfft.py:rfft2:1388,0.0,0.0,0.0
+Return the cumulative product of the array elements over the given axis.,core.py:cumprod:5385,shape_base.py:stack:381,0.0,0.0,0.0
+"For each element in `self`, return a copy of the string with all",defchararray.py:replace:994,defmatrix.py:A:844,0.0,0.0,0.0
+Compute the one-dimensional discrete Fourier Transform.,_pocketfft.py:fft:114,_pocketfft.py:ifft:214,0.0,1.0,0.25
+Return the indices to access the main diagonal of an array.,_index_tricks_impl.py:diag_indices:948,_linalg.py:diagonal:3043,0.0,1.0,0.5
+Transposes a matrix (or a stack of matrices) ``x``.,fromnumeric.py:matrix_transpose:710,_linalg.py:transpose:214,0.0,1.0,0.5
+Create a record array from binary data,records.py:fromstring:756,mrecords.py:fromrecords:538,0.0,0.0,0.0
+Return a derivative of this polynomial.,_polynomial_impl.py:deriv:1443,chebyshev.py:cheb2poly:397,0.0,1.0,0.25
+Helper function used to implement the ``<type>div`` functions.,polyutils.py:_div:519,_inspect.py:isfunction:26,0.0,1.0,0.3333333333333333
+Return an antiderivative (indefinite integral) of a polynomial.,_polynomial_impl.py:polyint:261,legendre.py:leg2poly:149,0.0,0.0,0.14285714285714285
+Computes the inverse of `rfftn`.,_pocketfft.py:irfftn:1468,_pocketfft.py:rfftn:1261,0.0,0.0,0.0
+Apply linear map to input points.,polyutils.py:mapdomain:288,polyutils.py:_vander_nd_flat:433,0.0,0.0,0.0
+Helper function used to implement the ``<type>sub`` functions.,polyutils.py:_sub:568,polynomial.py:polysub:252,0.0,1.0,0.5
+"Evaluate a 3-D Legendre series on the Cartesian product of x, y, and z.",legendre.py:leggrid3d:1048,chebyshev.py:_zseries_der:277,0.0,0.0,0.0
+Changes elements of an array based on conditional and input values.,core.py:putmask:7586,extras.py:setdiff1d:1526,0.0,0.0,0.0
+Filter out the wall of DeprecationWarnings.,conftest.py:warnings_errors_and_rng:156,_utils_impl.py:deprecate_with_doc:265,0.0,0.0,0.0
+Matrix or vector norm.,_linalg.py:norm:2576,_linalg.py:matrix_norm:3419,0.0,0.0,0.1
+Construct an array by executing a function over each coordinate.,numeric.py:fromfunction:1849,format.py:write_array_header_1_0:470,0.0,0.0,0.0
+"Computes all possible pair contractions, sieves the results based",einsumfunc.py:_optimal_path:147,einsumfunc.py:_greedy_path:327,0.0,1.0,0.3333333333333333
+Evaluate an HermiteE series at points x.,hermite_e.py:hermeval:797,hermite.py:_normed_hermite_n:1551,0.0,0.0,0.0
+Tests inplace w/ array,timer_comparison.py:test_6:290,testutils.py:assert_array_less:273,0.0,0.0,0.0
+Transforms the mvoid object into a tuple.,core.py:tolist:6703,core.py:__next__:2737,0.0,0.0,0.0
+Helper function that returns the number of characters per field in,strings.py:_get_num_chars:87,_nested_sequence.py:count:83,0.0,1.0,0.3333333333333333
+Parse string within the given context.,symbolic.py:process:1317,symbolic.py:fromstring:1271,0.0,0.0,0.0
+"Evaluate a 3-D Hermite_e series at points (x, y, z).",hermite_e.py:hermeval3d:980,hermite_e.py:_normed_hermite_e_n:1469,0.0,0.0,0.0
+Evaluate a polynomial at points x.,polynomial.py:polyval:663,chebyshev.py:cheb2poly:397,0.0,0.0,0.0
+Test if path exists.,_datasource.py:exists:427,_datasource.py:exists:616,0.0,1.0,0.25
+Square root histogram bin estimator.,_histograms_impl.py:_hist_bin_sqrt:32,_histograms_impl.py:_hist_bin_stone:122,0.0,1.0,0.3333333333333333
+"Add self to other, and return a new masked array.",core.py:__add__:4316,core.py:mT:6313,0.0,0.0,0.0
+Return the Discrete Fourier Transform sample frequencies,_helper.py:rfftfreq:181,_pocketfft.py:ifft:214,0.0,0.0,0.1
+Construct an array from an index array and a list of arrays to choose from.,fromnumeric.py:choose:334,_arrayterator_impl.py:__array__:131,0.0,0.0,0.0
+Add one Chebyshev series to another.,chebyshev.py:chebadd:569,chebyshev.py:chebmul:700,0.0,0.0,0.14285714285714285
+"For each element in `self`, return a copy with the leading characters",defchararray.py:lstrip:972,defchararray.py:strip:1113,0.0,0.0,0.16666666666666666
+"For each element in `a`, return a copy with the leading and",strings.py:strip:989,_function_base_impl.py:copy:899,0.0,0.0,0.0
+Empty masked array with the properties of an existing array.,extras.py:masked_all_like:163,core.py:masked_object:2255,0.0,0.0,0.0
+Split an array into multiple sub-arrays vertically (row-wise).,_shape_base_impl.py:vsplit:958,_shape_base_impl.py:column_stack:622,0.0,0.0,0.0
+"x.__setitem__(i, y) <==> x[i]=y",core.py:__setitem__:3423,mrecords.py:__setitem__:317,0.0,0.0,0.0
+Asserts that two items are almost equal.,testutils.py:assert_almost_equal:180,testutils.py:assert_equal_records:97,0.0,1.0,0.3333333333333333
+Differentiate a Legendre series.,legendre.py:legder:614,legendre.py:poly2leg:100,0.0,0.0,0.0
+Compute the roots of a Hermite series.,hermite.py:hermroots:1487,hermite.py:_normed_hermite_n:1551,0.0,0.0,0.0
+Returns the indices that would sort an array.,fromnumeric.py:argsort:1131,_function_base_impl.py:_get_indexes:4736,0.0,0.0,0.0
+"Evaluate a 2-D Chebyshev series at points (x, y).",chebyshev.py:chebval2d:1171,chebyshev.py:poly2cheb:347,0.0,0.0,0.16666666666666666
+"For each element in `self`, return a copy of the string where",defchararray.py:translate:1150,symbolic.py:contains:716,0.0,0.0,0.0
+Provide information about ndarray obj.,_utils_impl.py:_info:359,core.py:_get_data:3771,0.0,0.0,0.0
+Build and imports a c-extension module `modname` from a list of function,extbuild.py:build_and_import_extension:17,extbuild.py:compile_extension_module:84,0.0,1.0,0.5
+Shift the bits of an integer to the right.,core.py:right_shift:7508,numeric.py:binary_repr:2015,0.0,1.0,0.5
+Divide one Chebyshev series by another.,chebyshev.py:chebdiv:749,chebyshev.py:chebmul:700,0.0,1.0,0.5
+Minimum value of given dtype.,getlimits.py:min:709,numerictypes.py:_preprocess_dtype:368,0.0,1.0,0.25
+"Subtract other from self, and return a new masked array.",core.py:__sub__:4334,core.py:get_masked_subclass:686,0.0,0.0,0.0
+Returns the average of the array elements along given axis.,core.py:mean:5416,extras.py:average:548,0.0,0.0,0.1111111111111111
+Puts printoptions in result where mask is True.,core.py:_recursive_printoption:2489,core.py:masked_equal:2140,0.0,1.0,0.5
+Weight function of the Hermite_e polynomials.,hermite_e.py:hermeweight:1574,hermite_e.py:_normed_hermite_e_n:1469,0.0,1.0,0.25
+Chebyshev series whose graph is a straight line.,chebyshev.py:chebline:476,chebyshev.py:chebmulx:655,0.0,0.0,0.0
+Return the size of the buffer used in ufuncs.,_ufunc_config.py:getbufsize:198,overrides.py:get_overridable_numpy_array_functions:50,0.0,1.0,0.25
+Returns an iterator of concatenated items from a sequence of arrays.,recfunctions.py:_izip_records:304,core.py:flatten_structured_array:2555,0.0,0.0,0.0
+Replaces specified elements of an array with given values.,fromnumeric.py:put:514,defchararray.py:replace:994,0.0,0.0,0.0
+Set the mask.,core.py:__setmask__:3521,core.py:__setitem__:3423,0.0,0.0,0.14285714285714285
+True divide self by other in-place.,core.py:__itruediv__:4512,defchararray.py:__le__:632,0.0,0.0,0.0
+Subtract one Laguerre series from another.,laguerre.py:lagsub:349,laguerre.py:lagmulx:389,0.0,0.0,0.0
+Compute the inverse FFT of a signal that has Hermitian symmetry.,_pocketfft.py:ihfft:627,_pocketfft.py:fft:114,0.0,0.0,0.0
+Concatenate a sequence of arrays along the given axis.,core.py:concatenate:7348,shape_base.py:_concatenate_shapes:644,0.0,0.0,0.0
+Returns all the fields sharing the same fieldname base.,mrecords.py:__getitem__:285,recfunctions.py:_get_fieldspec:72,0.0,0.0,0.0
+Convert inputs to arrays with at least one dimension.,shape_base.py:atleast_1d:22,shape_base.py:stack:381,0.0,0.0,0.0
+The differences between consecutive elements of an array.,_arraysetops_impl.py:ediff1d:42,extras.py:notmasked_contiguous:2089,0.0,0.0,0.0
+Mask columns of a 2D array that contain masked values.,extras.py:mask_cols:1213,extras.py:mask_rowcols:1073,0.0,0.0,0.125
+domain_tan(eps) = true where abs(cos(x)) < eps),core.py:__init__:874,_scimath_impl.py:arccos:497,0.0,0.0,0.0
+Helper function used to implement the ``<type>add`` functions.,polyutils.py:_add:555,defchararray.py:__add__:662,0.0,1.0,0.25
+Compute the N-dimensional discrete Fourier Transform.,_pocketfft.py:fftn:750,_pocketfft.py:ifft:214,0.0,0.0,0.125
+Return a copy of `self` with its elements centered in a,defchararray.py:center:754,defmatrix.py:A:844,0.0,1.0,0.5
+Creates a mrecarray from data stored in the file `filename`.,mrecords.py:fromtextfile:660,format.py:open_memmap:864,0.0,0.0,0.0
+"Convert the input to a `~numpy.char.chararray`, copying the data only if",defchararray.py:asarray:1357,_nanfunctions_impl.py:_copyto:115,0.0,0.0,0.0
+Mask whole 1-d vectors of an array that contain masked values.,core.py:_mask_propagate:8185,extras.py:mask_rowcols:1073,0.0,0.0,0.0
+Get the index.,core.py:__getitem__:6622,_nested_sequence.py:index:87,0.0,0.0,0.0
+"Return available memory in bytes, or None if unknown.",utils.py:_get_mem_available:2631,utils.py:check_free_memory:2586,0.0,1.0,0.5
+Shortcut to MaskedArray.,core.py:array:6905,core.py:all:5018,0.0,0.0,0.0
+Update the fill_value and masked data of `output`,recfunctions.py:_fix_defaults:345,core.py:masked_equal:2140,0.0,1.0,0.25
+Open and return file-like object prepending Repository base URL.,_datasource.py:open:650,_datasource.py:_isurl:299,0.0,1.0,0.3333333333333333
+Write any changes in the array to the file on disk.,memmap.py:flush:322,_npyio_impl.py:save:502,0.0,0.0,0.0
+Equivalent to running::,f2py2e.py:run_main:426,utils.py:rundocs:1332,0.0,0.0,0.0
+Return an array with the elements of `a` left-justified in a,strings.py:ljust:723,defmatrix.py:A:844,0.0,0.0,0.0
+Generates a flattened version of the sequence.,core.py:_flatsequence:1854,core.py:flatten_sequence:2583,0.0,1.0,0.25
+Combines the code fragments into source code ready to be compiled,extbuild.py:_make_source:167,extbuild.py:compile_extension_module:84,0.0,1.0,0.3333333333333333
+Partition each element in ``a`` around ``sep``.,strings.py:partition:1458,defchararray.py:partition:318,0.0,1.0,0.25
+Perform type promotion for two structured dtypes.,_internal.py:_promote_fields:449,numerictypes.py:issubdtype:472,0.0,0.0,0.0
+"Find the unique elements of an array, and counts, inverse, and indices.",_arraysetops_impl.py:unique_all:409,_arraysetops_impl.py:unique_counts:469,0.0,1.0,0.25
+Evaluate a normalized HermiteE polynomial.,hermite_e.py:_normed_hermite_e_n:1469,hermite.py:_normed_hermite_n:1551,0.0,1.0,0.5
+Function decorator to apply certain suppressions to a whole,utils.py:__call__:2448,overrides.py:array_function_from_dispatcher:173,0.0,0.0,0.0
+Compute the qr factorization of a matrix.,_linalg.py:qr:929,_linalg.py:svd:1640,0.0,1.0,0.3333333333333333
+"Evaluate a 2-D polynomial at points (x, y).",polynomial.py:polyval2d:845,legendre.py:leg2poly:149,0.0,1.0,0.25
+Split an array into multiple sub-arrays horizontally (column-wise).,_shape_base_impl.py:hsplit:887,_shape_base_impl.py:split:804,0.0,0.0,0.0
+Pad an array.,_arraypad_impl.py:pad:546,_arraypad_impl.py:_pad_simple:86,0.0,1.0,0.5
+Parse a Fortran expression to a Expr.,symbolic.py:parse:164,capi_maps.py:f2cexpr:238,0.0,0.0,0.0
+"Returns the shape of the final array, along with a list",shape_base.py:_block_info_recursion:701,shape_base.py:_block:754,0.0,1.0,0.5
+Evaluate a polynomial specified by its roots at points x.,polynomial.py:polyvalfromroots:758,_polynomial_impl.py:roots:164,0.0,0.0,0.0
+Test whether each element of a 1-D array is also present in a second array.,_arraysetops_impl.py:in1d:763,_npyio_impl.py:_ensure_ndmin_ndarray:813,0.0,0.0,0.0
+"Splits the line into (line[:i], line[i:]),",crackfortran.py:split_by_unquoted:664,defchararray.py:splitlines:1089,0.0,0.0,0.0
+"Return minimum of an array or minimum along an axis, ignoring any NaNs.",_nanfunctions_impl.py:nanmin:254,defmatrix.py:min:691,0.0,0.0,0.125
+Compute the 2-dimensional discrete Fourier Transform.,_pocketfft.py:fft2:1014,_pocketfft.py:ifft2:1139,0.0,1.0,0.5
+Generate a Hermite series with given roots.,hermite.py:hermfromroots:258,hermite.py:_normed_hermite_n:1551,0.0,0.0,0.0
+Combine the dtype description of a series of arrays.,recfunctions.py:_zip_descr:213,ctypeslib.py:as_ctypes:561,0.0,0.0,0.0
+Returns True if first argument is a typecode lower/equal in type hierarchy.,numerictypes.py:issubdtype:472,_iotools.py:_dtypeortype:532,0.0,1.0,0.25
+Checks if we can use BLAS (np.tensordot) call and its beneficial to do so.,einsumfunc.py:_can_dot:442,numeric.py:tensordot:969,0.0,0.0,0.0
+Compute the eigenvalues of a complex Hermitian or real symmetric matrix.,_linalg.py:eigvalsh:1230,_linalg.py:svdvals:1832,0.0,0.0,0.0
+Return a partitioned copy of an array.,fromnumeric.py:partition:759,_arrayterator_impl.py:__array__:131,0.0,1.0,0.5
+Integrate a Laguerre series.,laguerre.py:lagint:676,laguerre.py:lagmul:443,0.0,1.0,0.25
+Mask an array where equal to a given value.,core.py:masked_equal:2140,core.py:masked_object:2255,0.0,1.0,0.25
+Computes the vector dot product.,_linalg.py:vecdot:3584,multiarray.py:vdot:857,0.0,0.0,0.0
+A pointer to the memory area of the array as a Python integer.,_internal.py:data:317,_array_utils_impl.py:byte_bounds:12,0.0,0.0,0.0
+Set how floating-point errors are handled.,_ufunc_config.py:seterr:21,_machar.py:__init__:104,0.0,0.0,0.0
+Returns the standard deviation of the array elements along given axis.,core.py:std:5586,defmatrix.py:mean:419,0.0,0.0,0.125
+Generate a HermiteE series with given roots.,hermite_e.py:hermefromroots:258,hermite.py:_normed_hermite_n:1551,0.0,0.0,0.0
+"Return a new matrix of given shape and type, without initializing entries.",matlib.py:empty:24,matlib.py:ones:65,0.0,1.0,0.5
+Object arrays containing lists should be printed unambiguously,arrayprint.py:_object_format:428,defmatrix.py:tolist:270,0.0,1.0,0.5
+Raises an AssertionError if two objects are not equal.,utils.py:assert_equal:217,testutils.py:assert_equal_records:97,0.0,1.0,0.2
+(This docstring should be overwritten),extras.py:apply_along_axis:390,core.py:_replace_return_type:8801,0.0,0.0,0.0
+Return a copy of `a` with its elements centered in a string of,strings.py:center:655,defchararray.py:center:754,0.0,1.0,0.2
+Extend DataSource method to prepend baseurl to ``path``.,_datasource.py:_findfile:589,_datasource.py:exists:616,0.0,1.0,0.5
+Load data from a text file.,_npyio_impl.py:loadtxt:1131,mrecords.py:fromtextfile:660,0.0,0.0,0.0
+Return the scalar type of highest precision of the same kind as the input.,numerictypes.py:maximum_sctype:124,_type_check_impl.py:common_type:647,0.0,0.0,0.0
+Convert non-Expr objects to Expr objects.,symbolic.py:as_expr:928,symbolic.py:as_symbol:944,0.0,0.0,0.125
+Return an array with the elements converted to lowercase.,strings.py:lower:1073,defchararray.py:asarray:1357,0.0,0.0,0.125
+Return a scalar type which is common to the input arrays.,_type_check_impl.py:common_type:647,_iotools.py:_getsubdtype:527,0.0,1.0,0.3333333333333333
+Raise a Legendre series to a power.,legendre.py:legpow:583,_scimath_impl.py:power:442,0.0,1.0,0.25
+Compute the linear interpolation weighted by gamma on each point of,_function_base_impl.py:_lerp:4639,laguerre.py:lag2poly:142,0.0,1.0,0.5
+Divide the first z-series by the second.,chebyshev.py:_zseries_div:210,chebyshev.py:_cseries_to_zseries:133,0.0,0.0,0.14285714285714285
+Least squares fit to data.,_polybase.py:fit:952,polyutils.py:_fit:582,0.0,0.0,0.1111111111111111
+"Return (self + other), that is string concatenation,",defchararray.py:__add__:662,defchararray.py:__radd__:673,0.0,1.0,0.5
+Weight function of the Laguerre polynomials.,laguerre.py:lagweight:1600,laguerre.py:lagmul:443,0.0,0.0,0.125
+Returns the unique elements of an input array `x`.,_arraysetops_impl.py:unique_values:574,_arraysetops_impl.py:unique_all:409,0.0,1.0,0.3333333333333333
+Builds a signature string which resembles PEP 457,_internal.py:_ufunc_doc_signature_formatter:893,_function_base_impl.py:_parse_gufunc_signature:2153,0.0,1.0,0.5
+Evaluate a 2-D Laguerre series on the Cartesian product of x and y.,laguerre.py:laggrid2d:941,legendre.py:poly2leg:100,0.0,0.0,0.125
+Check mode and that encoding and newline are compatible.,_datasource.py:_check_mode:45,_iotools.py:_decode_line:11,0.0,1.0,0.5
+Returns the dtype unchanged if it contained no metadata or a copy of the,_utils_impl.py:drop_metadata:715,format.py:dtype_to_descr:245,0.0,0.0,0.125
+Return the shape tuple as an array of some other c-types,_internal.py:shape_as:298,_function_base_impl.py:_create_arrays:2249,0.0,0.0,0.0
+Assert that a comparison of two masked arrays is satisfied elementwise.,timer_comparison.py:assert_array_compare:47,testutils.py:assert_array_compare:199,0.0,1.0,0.3333333333333333
+Find the best order for three arrays and do the multiplication.,_linalg.py:_multi_dot_three:2961,_linalg.py:_multi_dot_matrix_chain_order:2982,0.0,0.0,0.16666666666666666
+Return the first index of `value`.,_nested_sequence.py:index:87,defchararray.py:index:835,0.0,1.0,0.5
+Print information about various resources in the system,_utils_impl.py:show_runtime:19,arrayprint.py:get_printoptions:319,0.0,0.0,0.0
+Compute the histogram of a dataset.,_histograms_impl.py:histogram:690,_histograms_impl.py:histogram_bin_edges:478,0.0,1.0,0.25
+A ``key`` function for `sorted`.,numerictypes.py:_scalar_type_key:590,_histograms_impl.py:_search_sorted_inclusive:461,0.0,0.0,0.0
+Load ASCII data stored in a comma-separated file.,_npyio_impl.py:recfromcsv:2547,crackfortran.py:readfortrancode:357,0.0,0.0,0.0
+Helper function used to implement the ``<type>grid<n>d`` functions.,polyutils.py:_gridnd:503,polynomial.py:polygrid2d:897,0.0,1.0,0.25
+Flatten a sequence in place.,extras.py:flatten_inplace:380,core.py:flatten_sequence:2583,0.0,1.0,0.5
+Chebyshev points of the second kind.,chebyshev.py:chebpts2:1888,chebyshev.py:poly2cheb:347,0.0,0.0,0.1
+Create a numpy array from a ctypes array or POINTER.,ctypeslib.py:as_array:520,ctypeslib.py:_ctype_ndarray:349,0.0,1.0,0.3333333333333333
+Check if self contains other.,symbolic.py:contains:716,_nested_sequence.py:__contains__:71,0.0,1.0,0.5
+Raises an AssertionError if two items are not equal up to desired,utils.py:assert_almost_equal:468,testutils.py:assert_equal:112,0.0,0.0,0.0
+Remove trailing coefficients,_polybase.py:trim:733,polyutils.py:trimcoef:144,0.0,0.0,0.14285714285714285
+Find the unique elements of an array.,_arraysetops_impl.py:unique:146,_arraysetops_impl.py:unique_all:409,0.0,0.0,0.0
+Return the least-squares solution to a linear matrix equation.,_linalg.py:lstsq:2395,_linalg.py:solve:321,0.0,0.0,0.0
+Return the identity array.,numeric.py:identity:2197,matlib.py:identity:154,0.0,1.0,0.3333333333333333
+Convert a dtype to a short form which evaluates to the same dtype.,arrayprint.py:dtype_short_repr:1537,ctypeslib.py:as_ctypes_type:463,0.0,1.0,0.5
+Return absolute path of file in the DataSource directory.,_datasource.py:abspath:371,_datasource.py:_findfile:589,0.0,0.0,0.16666666666666666
+Creates a mrecarray from a (flat) list of masked arrays.,mrecords.py:fromarrays:495,core.py:array:6905,0.0,0.0,0.14285714285714285
+Create a DataSource with a local path at destpath.,_datasource.py:__init__:245,_datasource.py:exists:616,0.0,0.0,0.0
+Return the magic string for the given file format version.,format.py:magic:203,_pep440.py:parse:117,0.0,0.0,0.0
+Evaluate a 2-D polynomial on the Cartesian product of x and y.,polynomial.py:polygrid2d:897,polynomial.py:polyval2d:845,0.0,0.0,0.1111111111111111
+Return evenly spaced numbers over a specified interval.,function_base.py:linspace:26,recfunctions.py:_common_stride:891,0.0,0.0,0.0
+Pad `axis` of `arr` with reflection.,_arraypad_impl.py:_set_reflect_both:296,defmatrix.py:argmin:726,0.0,1.0,0.3333333333333333
+Compute the standard deviation along the specified axis.,fromnumeric.py:std:3870,hermite_e.py:_normed_hermite_e_n:1469,0.0,0.0,0.0
+Integrate a Hermite series.,hermite.py:hermint:679,hermite_e.py:_normed_hermite_e_n:1469,0.0,0.0,0.0
+Read an array from an NPY file.,format.py:read_array:762,core.py:getdata:713,0.0,0.0,0.0
+"Raise self to the power other, masking the potential NaNs/Infs",core.py:__pow__:4406,core.py:__float__:4552,0.0,0.0,0.1
+Set difference of 1D arrays with unique elements.,extras.py:setdiff1d:1526,_arraysetops_impl.py:setdiff1d:1178,0.0,1.0,0.5

@@ -27,7 +27,10 @@ def extract_functions(root, skip_dirs=("test", "tests"), min_query_words=3):
             doc = ast.get_docstring(node)
             if not doc:
                 continue
-            query = doc.strip().splitlines()[0].strip()
+            lines_doc = doc.strip().splitlines()
+            if not lines_doc:
+                continue
+            query = lines_doc[0].strip()
             if len(query.split()) < min_query_words:
                 continue
             d = node.body[0]  # the docstring statement
