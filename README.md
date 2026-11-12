@@ -11,7 +11,7 @@ Developers joining a new codebase often know *what* a function should do but not
 1. **BM25 keyword baseline** — a classical information-retrieval method that scores functions by term overlap.
 2. **Transformer-based semantic search** — a pretrained sentence encoder (`all-MiniLM-L6-v2`) that matches the *meaning* of a query to the *meaning* of source code using cosine similarity.
 
-The system parses Python source files, extracts every function that has a docstring, and uses the first line of the docstring as a natural-language query. It then measures how well each search method can retrieve the correct function given that query.
+The system parses Python source files, extracts every function that has a docstring, and uses the first sentence/paragraph of the docstring as a natural-language query. It then measures how well each search method can retrieve the correct function given that query.
 
 ## Project Architecture
 
@@ -35,7 +35,7 @@ cs/
 
 ### How It Works
 
-1. **Data Extraction** (`src/data.py`): Walks a Python codebase, parses each `.py` file with the `ast` module, and extracts every function/async-function that has a docstring. The first line of the docstring becomes the *query*; the function body (with docstring stripped) becomes the *code*. Duplicate queries are removed to ensure each query has a unique answer.
+1. **Data Extraction** (`src/data.py`): Walks a Python codebase, parses each `.py` file with the `ast` module, and extracts every function/async-function that has a docstring. The first sentence/paragraph of the docstring becomes the *query*; the function body (with docstring stripped) becomes the *code*. Duplicate normalized queries are removed to ensure each query has a unique answer.
 
 2. **BM25 Baseline** (`src/baseline.py`): Tokenizes function names and code using camelCase/snake_case splitting, then builds a BM25Okapi index. Queries are tokenized the same way and scored against the index.
 
