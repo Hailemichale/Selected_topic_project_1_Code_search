@@ -4,6 +4,17 @@
 
 Project 1 for **Selected Topics in Software Engineering** — Addis Ababa University, Department of Software Engineering.
 
+## Team Members
+
+| Name | ID |
+|---|---|
+| Peter Kinfe | ATE/7749/15 |
+| Abdisa Alemu | ATE/2603/14 |
+| Hailemichale Lijalem | ATE/1051/14 |
+| Beamlak Tibebu | ATE/3624/14 |
+| Loza Wondwossen | ATE/5401/14 |
+| Gerawork Aklilu | ATE/3243/14 |
+
 ## Overview
 
 Developers joining a new codebase often know *what* a function should do but not *what it is called*. Typing `"parse a date"` into a keyword search returns nothing when the function is actually named `to_datetime_obj`. This project tackles that gap by building and comparing two code-search approaches:
@@ -140,17 +151,6 @@ Three real examples drawn from `results/failures_dev_bm25.csv` and `results/fail
 - **Python only**: The current pipeline only processes `.py` files.
 - **Docstring dependency**: Functions without docstrings are excluded from the dataset.
 - **Single-language queries**: Queries are assumed to be in English.
-
-## Team Members
-
-| Name | ID |
-|---|---|
-| Peter Kinfe | ATE/7749/15 |
-| Abdisa Alemu | ATE/2603/14 |
-| Hailemichale Lijalem | ATE/1051/14 |
-| Beamlak Tibebu | ATE/3624/14 |
-| Loza Wondwossen | ATE/5401/14 |
-| Gerawork Aklilu | ATE/3243/14 |
 
 ## References
 
