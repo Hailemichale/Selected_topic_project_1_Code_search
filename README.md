@@ -9,7 +9,6 @@ Project 1 for **Selected Topics in Software Engineering** — Addis Ababa Univer
 | Name | ID |
 |---|---|
 | Peter Kinfe | ATE/7749/15 |
-| Abdisa Alemu | ATE/2603/14 |
 | Hailemichale Lijalem | ATE/1051/14 |
 | Beamlak Tibebu | ATE/3624/14 |
 | Loza Wondwossen | ATE/5401/14 |
