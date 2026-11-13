@@ -1,2 +1,6 @@
 
 *.pptx
+.pytest_cache
+.vscode
+__pycache__
+venv
