@@ -95,18 +95,44 @@ python -m eval.evaluate --repo path/to/code --on test
 Results and failed-query logs are written to the `results/` directory.  
 Everything runs on a laptop CPU or a free Google Colab session.
 
-## Results (Held-Out Test Split)
+## Results (Dev Split — 612 queries)
 
 | Method | Recall@1 | Recall@5 | MRR@10 |
 |---|---|---|---|
-| BM25 baseline | — | — | — |
-| Transformer | — | — | — |
+| BM25 baseline | 20.1% | 38.6% | 0.283 |
+| Transformer (`all-MiniLM-L6-v2`) | **30.1%** | **57.8%** | **0.417** |
 
-> *Results will be populated after final evaluation.*
+The Transformer consistently outperforms BM25 across all metrics:
+- **+50% relative improvement** in Recall@1 (30.1% vs 20.1%)
+- **+50% relative improvement** in Recall@5 (57.8% vs 38.6%)
+- **+47% relative improvement** in MRR@10 (0.417 vs 0.283)
+
+> Results on the held-out **test split** will be added after final evaluation.
 
 ## Failure Analysis
 
-*Three real examples from `results/failures_test_*.csv` — the query, what was returned, and why the method failed — will be documented here after evaluation.*
+Three real examples drawn from `results/failures_dev_bm25.csv` and `results/failures_dev_embed.csv`.
+
+### BM25 Failures
+
+| # | Query | Expected (`gold`) | BM25 returned | Why it failed |
+|---|---|---|---|---|
+| 1 | *"Add one Laguerre series to another."* | `laguerre.py:lagadd` | `polyutils.py:_add` | The word `add` is too common — BM25 weights it low and ignores the domain-specific term `Laguerre`, returning a generic `_add` helper instead. |
+| 2 | *"Evaluate a polynomial at specific values."* | `_polynomial_impl.py:polyval` | `_function_base_impl.py:hanning` | No keyword overlap at all between the query and the retrieved function; BM25 has no way to understand that `polyval` evaluates polynomials. |
+| 3 | *"Return the product of array elements over a given axis."* | `fromnumeric.py:prod` | `_shape_base_impl.py:kron` | `kron` (Kronecker product) contains the word `product` in its docstring, misleading BM25 into ranking it above the correct `prod`. |
+
+### Transformer Failures
+
+| # | Query | Expected (`gold`) | Transformer returned | Why it failed |
+|---|---|---|---|---|
+| 1 | *"Split an array into multiple sub-arrays as views into ary."* | `_shape_base_impl.py:split` | `_shape_base_impl.py:array_split` | `split` and `array_split` are semantically nearly identical — the model correctly understands the concept but cannot distinguish the two near-duplicate functions. |
+| 2 | *"Add one Laguerre series to another."* | `laguerre.py:lagadd` | `laguerre.py:lagmulx` | Both functions operate on Laguerre series; the model encodes them into similar vector regions, confusing addition with multiplication-by-x. |
+| 3 | *"Return the maximum of an array or maximum along an axis, ignoring any NaN values."* | `_nanfunctions_impl.py:nanmax` | `defmatrix.py:max` | The model is confused by the high semantic overlap between `nanmax` and regular `max`; without seeing the `nan`-ignoring behaviour in the code, it cannot distinguish them. |
+
+**Common failure patterns:**
+- Both methods struggle with **near-duplicate functionality** (e.g. `split` vs `array_split`, `prod` vs `kron`).
+- BM25 is especially hurt by **common words** (`add`, `return`) that swamp rare domain terms.
+- The Transformer fails when **two functions are semantically indistinguishable** from their names and code alone.
 
 ## Limitations
 
